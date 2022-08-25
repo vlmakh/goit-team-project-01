@@ -1,0 +1,79 @@
+html,
+body {
+  background-color: $color-bcg;
+  color: $color-text;
+  font-family: $font-basic;
+  font-size: 14px;
+  line-height: 1.14;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.icon {
+  fill: currentColor;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+
+.section__title {
+  font-size: 28px;
+  line-height: 1.17;
+  text-align: center;
+
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+    font-size: 42px;
+    line-height: 1.2;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 48px;
+    line-height: 1.2;
+  }
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (max-width: 767px) {
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 480px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+    width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1280px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}

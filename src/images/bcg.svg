@@ -1,0 +1,22 @@
+<svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<symbol id="bcg-desk-1" viewBox="0 0 48 32">
+<path d="M0 6.183c17.29-10.704 37.981 11.675 47.85-6.183v32h-47.85v-25.817z"></path>
+</symbol>
+<symbol id="bcg-desk-2" viewBox="0 0 63 32">
+<path d="M0 29.091c22.434-11.646 49.737 17.005 62.63-7.022v-22.069h-62.63v29.091z"></path>
+</symbol>
+<symbol id="bcg-mob-1" viewBox="0 0 10 32">
+<path d="M0 1.829c2.59-2.438 7.163-2.438 9.752 0v30.171h-9.752v-30.171z"></path>
+</symbol>
+<symbol id="bcg-mob-2" viewBox="0 0 13 32">
+<path d="M0 0h13.281v32c-3.527-1.66-9.755-1.66-13.281 0v-32z"></path>
+</symbol>
+<symbol id="bcg-tab-1" viewBox="0 0 22 32">
+<path d="M0 3.705c9.358-5.319 16.83 5.909 21.558-3.705v32h-21.558v-28.295z"></path>
+</symbol>
+<symbol id="bcg-tab-2" viewBox="0 0 44 32">
+<path d="M0 30.417c15.89-6.339 35.229 9.255 44.361-3.822v-26.595h-44.361v30.417z"></path>
+</symbol>
+</defs>
+</svg>
