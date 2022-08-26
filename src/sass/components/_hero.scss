@@ -1,0 +1,121 @@
+.hero {
+  padding-bottom: 50px;
+  @media screen and (min-width: 1280px) {
+    padding: 0;
+  }
+}
+.hero__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  @media screen and (min-width: 1280px) {
+    position: relative;
+    display: block;
+  }
+}
+.section__title {
+  text-align: left;
+
+  @media screen and (min-width: 768px) and (max-width: 1280px) {
+    width: 537px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-top: 160px;
+    width: 502px;
+  }
+}
+
+.hero__wrapper {
+  @media screen and (min-width: 768px) and (max-width: 1280px) {
+    width: 336px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 502px;
+  }
+}
+
+.hero__text {
+  padding-top: 28px;
+  padding-bottom: 28px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  color: $color-text;
+
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1280px) {
+    padding-top: 44px;
+    padding-bottom: 40px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-top: 28px;
+    padding-bottom: 40px;
+  }
+}
+.hero__btn-order {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 1.5;
+  color: $color-text;
+
+  padding: 6px 18px;
+  background: $color-accent;
+  border-radius: 30px;
+  border: none;
+}
+.slider {
+  display: none;
+  @media screen and (min-width: 768px) {
+    position: relative;
+    display: block;
+    border-radius: 50%;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1280px) {
+    margin-right: 8px;
+    border: 14px solid $color-bcg-sec;
+  }
+  @media screen and (min-width: 1280px) {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 580px;
+    border: 26px solid $color-bcg-sec;
+  }
+}
+
+.hero__btn-arrow-left {
+  position: absolute;
+  color: rgba(44, 44, 44, 1);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+  background: $color-bcg;
+  border: none;
+  top: 50%;
+  left: -30px;
+  @media screen and (min-width: 1280px) {
+    left: -45px;
+  }
+}
+.hero__btn-arrow-right {
+  position: absolute;
+  color: rgba(44, 44, 44, 1);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+  background: $color-bcg;
+  border: none;
+  top: 50%;
+  right: -30px;
+  @media screen and (min-width: 1280px) {
+    right: -45px;
+  }
+}
+.icon {
+  width: 34px;
+  height: 28px;
+  vertical-align: middle;
+  @media screen and (min-width: 1280px) {
+    width: 48px;
+    height: 40px;
+  }
+}
