@@ -56,6 +56,9 @@
 
   color: #000;
   text-decoration: none;
+  transition: background-color $duration $timing-function,
+  color $duration $timing-function,
+  text-decoration $duration $timing-function;
 
   @media screen and (max-width: 767px) {
     padding: 16px;
