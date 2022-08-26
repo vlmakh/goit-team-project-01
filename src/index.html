@@ -1,32 +1,36 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page title</title>
+    <title>FoodSta</title>
     <link rel="stylesheet" href="./sass/index.scss" />
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+
     <script type="module" src="./index.js"></script>
   </head>
   <body>
-    <!-- Header Влад Махненко-->
+    <!-- Header -- Влад Махненко-->
     <include src="./partials/_header.html"></include>
+    <main>
+      <!-- Hero -- Наталья Фалач -->
+      <include src="./partials/1-hero.html"></include>
 
-    <!-- Hero -->
-    <include src="./partials/1-hero.html"></include>
+      <!-- Offerings -- Роман Орлов -->
+      <include src="./partials/2-offerings.html"></include>
 
-    <!-- Offerings -->
-    <include src="./partials/2-offerings.html"></include>
+      <!-- Favorites -- Денис Борисюк -->
+      <include src="./partials/3-favorites.html"></include>
 
-    <!-- Favorites  -->
-    <include src="./partials/3-favorites.html"></include>
+      <!-- Customers -- Елена Каменева -->
+      <include src="./partials/4-customers.html"></include>
 
-    <!-- Customers -->
-    <include src="./partials/4-customers.html"></include>
-
-    <!-- Subscribe -->
-    <include src="./partials/5-subscribe.html"></include>
-
-    <!-- Footer -->
+      <!-- Subscribe -- Елена Каменева -->
+      <include src="./partials/5-subscribe.html"></include>
+    </main>
+    <!-- Footer -- Анна Малацион -->
     <include src="./partials/footer.html"></include>
+
+    <script src="./js/mobile-menu.js" type="module"></script>
   </body>
 </html>

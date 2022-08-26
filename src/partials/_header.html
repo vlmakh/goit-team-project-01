@@ -1,5 +1,22 @@
-<header>
-  <div class="container">
+<header class="page-header">
+  <div class="page-header__container">
     <img src="images/logo.png" alt="logo" width="70" />
+
+    <button type="button" class="mobile-menu-button" data-menu-btn>
+      <svg width="28" height="28">
+        <use class="icon" href="./images/icons.svg#icon-menu"></use>
+      </svg>
+    </button>
+
+    <nav data-menu class="nav is-closed">
+      <ul class="nav__list">
+        <li class="nav__item"><a href="" class="nav__link">Home</a></li>
+        <li class="nav__item"><a href="" class="nav__link">About</a></li>
+        <li class="nav__item"><a href="" class="nav__link">Service</a></li>
+        <li class="nav__item"><a href="" class="nav__link">Menu</a></li>
+        <li class="nav__item"><a href="" class="nav__link">Contact</a></li>
+      </ul>
+    </nav>
+    <button type="button" class="button-order-nav">Order Now</button>
   </div>
 </header>
