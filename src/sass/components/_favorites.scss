@@ -58,23 +58,25 @@
 }
 
 .favorites__thumb {
-  border-radius: 50%;
   border: 11px solid $color-bcg-sec;
   transition: border-color $duration $timing-function;
 
   @media screen and(max-width: 767px) {
     width: 280px;
     padding: 18px 17px;
+    border-radius: 140px;
   }
 
   @media screen and(min-width: 768px) {
-    border-width: 14px;
     padding: 20px;
+    border-width: 14px;
+    border-radius: 168px;
   }
 
   @media screen and(min-width: 1280px) {
-    border-width: 16px;
     padding: 25px 24px;
+    border-width: 16px;
+    border-radius: 198px;
   }
 
   &:hover,
