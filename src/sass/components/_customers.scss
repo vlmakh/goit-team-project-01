@@ -1,0 +1,99 @@
+.customers{
+    background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        @media screen and (max-width: 767px){
+            background-image: url(../images/bcg-mob-2.svg);
+        }
+        @media screen and (min-width: 768px){
+            background-image: url(../images/bcg-tab-2.svg);
+            padding-bottom: 120px;
+        }
+        @media screen and (min-width: 1280px){
+            background-image: url(../images/bcg-desk-2.svg);
+            padding-bottom: 200px;
+            padding-right: 123px;
+        }
+    &__title{
+        margin-bottom: 20px;
+        text-align: start;
+    }
+    &__text{
+        line-height: calc(16 / 14);
+        font-size: 14px;
+        color: $color-text;
+        margin-bottom: 32px;
+        @media screen and (min-width: 768px){
+            font-size: 16px;
+            line-height: calc(19 / 16);
+        }
+    }
+    &__list{
+        list-style: none;
+        @media screen and (min-width: 768px){
+            display: flex;
+            gap: 32px;
+        }
+        @media screen and (min-width: 1280px){
+            display: flex;
+            gap: 139px;
+        }
+    }
+    &__item{
+       width: 100%;
+       padding: 8px;
+       background-color: $color-bcg;
+       border-radius: 0px 30px 30px 30px;
+       border: 1px solid transparent;
+
+       @media screen and (min-width: 768px){
+        padding: 12px;
+        max-width: 336px;
+       }
+       @media screen and (min-width: 1280px){
+        padding: 14px;
+        max-width: 501px;
+       }
+    }
+    &__item:first-child{
+        @media screen and (max-width: 767px){
+            margin-bottom: 24px;
+        }
+    }
+}
+.customers__icon{
+    margin-bottom: 28px;
+}
+.customers__subtitle{
+    margin-bottom: 40px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(19 / 16);
+
+    @media screen and (min-width: 768px){
+        font-size: 18px;
+        line-height: calc(21 / 18);
+    }
+}
+.customers__box{
+    display: flex;
+    gap: 16px;
+}
+.customers__about{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    border-right: 0.854167px solid $color-accent-sec;
+    padding-right: 16px;
+    justify-content: center;
+}
+.customers__name{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: calc(21 / 14);
+}
+.customers__description{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(21 / 14);
+}
