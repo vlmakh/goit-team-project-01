@@ -1,0 +1,137 @@
+.footer {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(.././images/footer/footer-bcg-320.jpg);
+} 
+.link {
+    text-decoration: none;
+    color: currentColor;
+}
+
+.list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer__box--first{
+    display: inline-block;
+}
+
+.footer__box-wrap {
+    display: flex;
+}
+
+.footer-nav__list{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-left: 81px;
+    
+
+    font-family: $font-basic;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.14;
+    color: #000000;
+
+    
+}
+
+.footer-sub__title{
+    width: 100%;
+    font-family: $font-basic;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 12px;
+
+    color: $color-text;
+}
+
+.footer-sub__input{
+    width: 100%;
+    padding: 12px;
+    padding-right: 61.5px;
+    margin-bottom: 20px;
+
+    background: #FFFFFF;
+    border: 0.85px solid $color-bcg-sec;
+    border-radius: 30px;
+
+    &::placeholder{
+        font-family: $font-basic;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.5;
+
+        color: #505050;
+    }
+}
+
+.footer-subscription-button{
+    padding: 11px 12px;
+    font-family: $font-basic;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 150%;
+    cursor: pointer;
+
+    color: $color-text;
+    background: #FFFFFF;
+    border: 0.85px solid $color-accent-sec;
+    border-radius: 30px;
+}
+
+.footer-sub__agreement{
+    font-family: $font-basic;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 1.2;
+    color: $color-text;
+
+    &--link{
+        color: $color-accent-sec;
+        text-decoration: underline;
+    }
+}
+
+.footer__box--second{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    // background-image: url()
+}
+
+.footer-docs{
+    width: 100%;
+    display:inline-flex;
+    justify-content: space-around;
+    text-align: center;
+    font-family: $font-basic;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 1.2;
+    color: $color-accent-sec;
+    text-decoration: underline;
+
+    margin-bottom: 40px;
+}
+
+.footer__copyright{
+    width: 100%;
+    
+    font-family: $font-basic;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 1.2;
+    color: $color-text;
+}
