@@ -26,9 +26,25 @@
 }
 
 .nav {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity $duration $timing-function,
+    visibility $duration $timing-function;
+
   @media screen and (min-width: 768px) {
     margin-left: auto;
   }
+}
+
+.nav.is-closed {
+  opacity: 0;
+  visibility: hidden;
+
+  @media screen and (min-width: 768px) {
+    visibility: visible;
+    opacity: 1;
+  }
+
 }
 
 .nav__list {
@@ -36,6 +52,7 @@
   font-size: 16px;
   overflow: hidden;
   background: $color-bcg;
+  z-index: 100;
 
   @media screen and (max-width: 767px) {
     position: absolute;
@@ -48,6 +65,7 @@
 
   @media screen and (min-width: 768px) {
     display: flex;
+    position: static;
   }
 }
 
