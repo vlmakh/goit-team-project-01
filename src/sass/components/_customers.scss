@@ -1,6 +1,11 @@
 .customers {
     @extend .section;
     padding-top: 0;
+    @media screen and (min-width: 1280px) {
+           
+            padding-bottom: 0;
+        }
+
         
     &__title{
         @extend .section__title;
@@ -53,6 +58,7 @@
 
 .customers__container {
     @extend .container;
+    position: relative;
     background-repeat: no-repeat;
         background-position: center;
         background-size: 100% 100%;
