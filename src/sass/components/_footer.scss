@@ -2,7 +2,14 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-image: url(.././images/footer/footer-bcg-320.jpg);
+
+    @media screen and (max-width: 767px){
+        background-image: url(.././images/footer/footer-bcg-320.jpg);
+    }
+    
+    @media screen and (min-width: 768px){
+        background-image: url(.././images/footer/footer-bcg-768.jpg);
+    }
 } 
 .link {
     text-decoration: none;
@@ -16,34 +23,42 @@
 }
 
 .footer__box--first{
-    display: inline-block;
+    display: block;
 }
 
 .footer__box-wrap {
     display: flex;
+    
 }
 
 .footer-nav__list{
     display: flex;
-    flex-direction: column;
-    gap: 20px;
-    margin-left: 81px;
     
-
-    font-family: $font-basic;
-    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.14;
     color: #000000;
 
-    
+    @media screen and (max-width: 767px){
+        flex-direction: column;
+        gap: 20px;
+        margin-left: 81px;
+        margin-bottom: 40px;
+    }
+
+    @media screen and (min-width: 768px){
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        
+        gap: 28px;
+        margin-left: 116px;
+        margin-bottom: 57px;
+    }
 }
 
 .footer-sub__title{
     width: 100%;
-    font-family: $font-basic;
-    font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.5;
@@ -53,48 +68,70 @@
 }
 
 .footer-sub__input{
-    width: 100%;
-    padding: 12px;
-    padding-right: 61.5px;
-    margin-bottom: 20px;
-
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 12px;
     background: #FFFFFF;
     border: 0.85px solid $color-bcg-sec;
     border-radius: 30px;
 
     &::placeholder{
-        font-family: $font-basic;
-        font-style: normal;
         font-weight: 400;
         font-size: 12px;
         line-height: 1.5;
 
-        color: #505050;
+        color: $color-text-placeholder;
     }
+
+    @media screen and (max-width: 767px){
+        width: 100%;
+        height: 42px;
+        margin-bottom: 20px;
+    }
+
+    @media screen and (min-width: 768px){
+        width: 279px;
+        margin-right: 13px;
+    }
+
+    
 }
 
 .footer-subscription-button{
-    padding: 11px 12px;
-    font-family: $font-basic;
-    font-style: normal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-weight: 500;
     font-size: 13px;
-    line-height: 150%;
+    line-height: 1.5;
     cursor: pointer;
+    min-width: 103px;
+    min-height: 42px;
+    padding: 11px 22px;
+    margin-left: auto;
+    margin-right: 0;
 
     color: $color-text;
     background: #FFFFFF;
     border: 0.85px solid $color-accent-sec;
     border-radius: 30px;
+
+    @media screen and (max-width: 767px){
+        margin-bottom: 20px;
+    }
+
+    
 }
 
 .footer-sub__agreement{
-    font-family: $font-basic;
-    font-style: normal;
     font-weight: 400;
     font-size: 10px;
     line-height: 1.2;
     color: $color-text;
+
+    @media screen and (max-width: 767px){
+        margin-bottom: 60px;
+    }
 
     &--link{
         color: $color-accent-sec;
@@ -102,34 +139,27 @@
     }
 }
 
-.footer__box--second{
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    // background-image: url()
-}
 
 .footer-docs{
-    width: 100%;
-    display:inline-flex;
-    justify-content: space-around;
-    text-align: center;
-    font-family: $font-basic;
-    font-style: normal;
     font-weight: 400;
     font-size: 10px;
     line-height: 1.2;
     color: $color-accent-sec;
     text-decoration: underline;
 
-    margin-bottom: 40px;
+    @media screen and (max-width: 767px){
+        width: 100%;
+        display:inline-flex;
+        justify-content: space-around;
+        text-align: center;
+        margin-bottom: 40px;
+    }
 }
 
 .footer__copyright{
-    width: 100%;
-    
-    font-family: $font-basic;
-    font-style: normal;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
     font-weight: 400;
     font-size: 10px;
     line-height: 1.2;
