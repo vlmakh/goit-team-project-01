@@ -1,20 +1,9 @@
-.customers{
-    background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        @media screen and (max-width: 767px){
-            background-image: url(../images/bcg-mob-2.svg);
-        }
-        @media screen and (min-width: 768px){
-            background-image: url(../images/bcg-tab-2.svg);
-            padding-bottom: 120px;
-        }
-        @media screen and (min-width: 1280px){
-            background-image: url(../images/bcg-desk-2.svg);
-            padding-bottom: 200px;
-            padding-right: 123px;
-        }
+.customers {
+    @extend .section;
+    padding-top: 0;
+        
     &__title{
+        @extend .section__title;
         margin-bottom: 20px;
         text-align: start;
     }
@@ -61,6 +50,33 @@
         }
     }
 }
+
+.customers__container {
+    @extend .container;
+    background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100% 100%;
+    
+        @media screen and (max-width: 767px) {
+            padding-top: 60px;
+            padding-bottom: 60px;
+            background-image: url(../images/bcg-mob-2.svg);
+        }
+    
+        @media screen and (min-width: 768px) {
+            padding-top: 60px;
+            background-image: url(../images/bcg-tab-2.svg);
+            padding-bottom: 120px;
+        }
+    
+        @media screen and (min-width: 1280px) {
+            padding-top: 100px;
+            background-image: url(../images/bcg-desk-2.svg);
+            padding-bottom: 200px;
+            padding-right: 123px;
+        }
+}
+
 .customers__icon{
     margin-bottom: 28px;
 }
