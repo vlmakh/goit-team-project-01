@@ -3,6 +3,7 @@
 @import './utils/visually-hidden';
 @import './base/body';
 @import './base/normalize';
+@import './utils/placeholders';
 
 @import './components/header';
 @import './components/hero';
@@ -10,4 +11,5 @@
 @import './components/favorites';
 @import './components/customers';
 @import './components/subscribe';
+@import './components/modal';
 @import './components/footer';
