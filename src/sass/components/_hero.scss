@@ -66,10 +66,17 @@
   background: $color-accent;
   border-radius: 30px;
   border: none;
+  transition: $duration $timing-function;
+}
+
+.hero__btn-order:hover,
+.hero__btn-order:focus {
+  background: $color-btn-hover;
 }
 
 .slider {
   display: none;
+  transition: $duration $timing-function;
   @media screen and (min-width: 768px) {
     position: absolute;
     display: block;
@@ -78,7 +85,6 @@
     right: 32px;
     top: 85px;
     border: 14px solid $color-bcg-sec;
-    // overflow: hidden;
   }
 
   @media screen and (min-width: 1280px) {
@@ -89,10 +95,16 @@
     border: 26px solid $color-bcg-sec;
   }
 }
+
+.slider:hover {
+  border-color: $color-accent;
+}
+
 .mySwiper {
   border-radius: 50%;
   overflow: hidden;
 }
+
 .hero__btn-arrow-left,
 .hero__btn-arrow-right {
   width: 34px;
@@ -166,10 +178,29 @@
 .swiper-button-next:after,
 .swiper-button-prev:after {
   font-size: 20px;
+  transition: $duration $timing-function;
   @media screen and (min-width: 1280px) {
     font-size: 22px;
   }
 }
+
+.swiper-button-next:focus,
+.swiper-button-prev:focus {
+  outline: none;
+}
+
+.swiper-button-next:hover:after,
+.swiper-button-prev:hover:after,
+.swiper-button-next:focus:after,
+.swiper-button-prev:focus:after {
+  color: $color-accent-sec;
+}
+
+.swiper-button-next:active,
+.swiper-button-prev:active {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
+}
+
 .swiper-button-next {
   right: -25px;
   @media screen and (min-width: 1280px) {
