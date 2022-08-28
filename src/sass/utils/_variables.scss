@@ -1,13 +1,18 @@
-$color-text: #2C2C2C;
+$color-text: #2c2c2c;
 $color-text-sec: #696969;
-$color-accent: #BBF330;
-$color-accent-sec: #7EB101;
-$color-bcg: #FEFEFE;
-$color-bcg-sec: #FFE550;
+$color-accent: #bbf330;
+$color-accent-sec: #7eb101;
+$color-bcg: #fefefe;
+$color-bcg-sec: #ffe550;
 $color-text-placeholder: #505050;
+$color-btn-hover: #b5ff00;
 
 $font-basic: 'Roboto', sans-serif;
-$shadow: radial-gradient(50% 50% at 50% 50%, #2F583F 0%, rgba(105, 105, 105, 0) 100%);
+$shadow: radial-gradient(
+  50% 50% at 50% 50%,
+  #2f583f 0%,
+  rgba(105, 105, 105, 0) 100%
+);
 
 $duration: 250ms;
 $timing-function: cubic-bezier(0.4, 0, 0.2, 1);
