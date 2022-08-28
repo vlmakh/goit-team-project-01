@@ -4,13 +4,18 @@
     background-size: cover;
 
     @media screen and (max-width: 767px){
-        background-image: url(.././images/footer/footer-bcg-320.jpg);
+        background-image: url(.././images/footer/footer-bcg-320@2x.jpg);
     }
-    
+
     @media screen and (min-width: 768px){
-        background-image: url(.././images/footer/footer-bcg-768.jpg);
+        background-image: url(.././images/footer/footer-bcg-768@2x.jpg);
+    }
+
+    @media screen and (min-width: 1280px){
+        background-image: url(.././images/footer/footer-bcg-1280@2x.jpg);
     }
 } 
+
 .link {
     text-decoration: none;
     color: currentColor;
@@ -24,16 +29,34 @@
 
 .footer__box--first{
     display: block;
+
+    
+    @media screen and (min-width: 1280px){
+        display: flex;
+    }
 }
 
 .footer__box-wrap {
     display: flex;
-    
+
+    @media screen and (min-width: 1280px){
+        align-items: flex-start;
+    }
+}
+
+.footer-sub{
+    @media screen and (min-width: 1280px){
+    display: inline-block;
+    justify-content: flex-end;
+    margin-right: 0;
+    margin-left: auto;
+    }
+
 }
 
 .footer-nav__list{
     display: flex;
-    
+   
     font-weight: 400;
     font-size: 14px;
     line-height: 1.14;
@@ -53,7 +76,23 @@
         
         gap: 28px;
         margin-left: 116px;
-        margin-bottom: 57px;
+    }
+
+    @media screen and (min-width: 1280px){
+        padding-top: 18px;
+        margin-left: 145px;
+    }
+}
+
+.footer-nav__link{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    transition: $duration $timing-function;
+
+    &:hover,
+    &focus{
+        color: $color-accent;
+        text-decoration: underline;
     }
 }
 
@@ -65,7 +104,16 @@
     margin-bottom: 12px;
 
     color: $color-text;
+
+    @media screen and (min-width: 768px){
+        margin-top: 57px;
+    }
+
+    @media screen and (min-width: 1280px){
+        margin-top: 0;
+    }
 }
+
 
 .footer-sub__input{
     padding-top: 12px;
@@ -74,33 +122,38 @@
     background: #FFFFFF;
     border: 0.85px solid $color-bcg-sec;
     border-radius: 30px;
+    transition: $duration $timing-function;
+
+    &:hover,
+    &focus{
+        border-color: $color-accent-sec;
+    }
 
     &::placeholder{
         font-weight: 400;
         font-size: 12px;
         line-height: 1.5;
+        
 
         color: $color-text-placeholder;
     }
 
     @media screen and (max-width: 767px){
+
         width: 100%;
         height: 42px;
         margin-bottom: 20px;
     }
 
     @media screen and (min-width: 768px){
+        display: inline-flex;
         width: 279px;
         margin-right: 13px;
     }
-
     
 }
 
 .footer-subscription-button{
-    display: flex;
-    align-items: center;
-    justify-content: center;
     font-weight: 500;
     font-size: 13px;
     line-height: 1.5;
@@ -108,19 +161,35 @@
     min-width: 103px;
     min-height: 42px;
     padding: 11px 22px;
-    margin-left: auto;
-    margin-right: 0;
-
+    
     color: $color-text;
-    background: #FFFFFF;
+    background-color: #FFFFFF;
     border: 0.85px solid $color-accent-sec;
     border-radius: 30px;
+    transition: $duration $timing-function;
 
-    @media screen and (max-width: 767px){
-        margin-bottom: 20px;
+    &:hover,
+    &focus{
+        background-color: $color-accent;
+        border-color: $color-accent;
     }
 
-    
+    &:active{
+        background-color: $color-bcg-sec;
+        border-color: $color-accent-sec;
+
+    }
+
+    @media screen and (max-width: 767px){
+        display: flex;
+        margin-bottom: 20px;
+        margin-left: auto;
+        margin-right: 0;
+    }
+
+    @media screen and (min-width: 768px){
+        margin-right: auto;
+    }
 }
 
 .footer-sub__agreement{
@@ -133,9 +202,20 @@
         margin-bottom: 60px;
     }
 
+    @media screen and (min-width: 768px){
+        margin-top: 12px;
+    }
+
     &--link{
         color: $color-accent-sec;
         text-decoration: underline;
+    }
+}
+
+.footer__box--second{
+    @media screen and (min-width: 768px){
+        display: flex;
+        margin-top: 100px;
     }
 }
 
@@ -154,6 +234,11 @@
         text-align: center;
         margin-bottom: 40px;
     }
+
+    @media screen and (min-width: 768px){
+        display: flex;
+        gap: 20px;
+    }
 }
 
 .footer__copyright{
@@ -164,4 +249,8 @@
     font-size: 10px;
     line-height: 1.2;
     color: $color-text;
+
+    @media screen and (min-width: 768px){
+        margin-right: 0;
+    }
 }
