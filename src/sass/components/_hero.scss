@@ -4,6 +4,7 @@
 
   @media screen and (min-width: 768px) and (max-width: 1280px) {
     padding-top: 60px;
+    padding-bottom: 0;
   }
   @media screen and (min-width: 1280px) {
     padding: 0;
@@ -69,6 +70,12 @@
   padding: 6px 18px;
   background: $color-accent;
   transition: $duration $timing-function;
+  
+  @media screen and (min-width: 768px) and (max-width: 1280px) {
+    position: absolute;
+    bottom: -35px;
+    left: 32px;
+  }
 }
 
 .hero__btn-order:hover,
