@@ -1,4 +1,6 @@
 .favorites {
+  @extend .section;
+
   &__title {
     margin-bottom: 20px;
   }
