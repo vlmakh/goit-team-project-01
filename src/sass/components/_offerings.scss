@@ -1,0 +1,183 @@
+.offerings {
+  @extend .section;
+  padding-top: 0;
+  padding-bottom: 0;
+
+  &__picture--mobile {
+    margin-bottom: 60px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media screen and (min-width: 768px) {
+      min-width: 357px;
+    }
+    @media screen and (min-width: 1200px) {
+      min-width: 550px;
+    }
+
+    // background: radial-gradient(
+    //     50% 50% at 50% 50%,
+    //     #2f583f 0%,
+    //     rgba(105, 105, 105, 0) 100%
+    //   )
+    //   blur(13.2364px);
+  }
+
+  &__title {
+    @extend .section__title;
+    margin-bottom: 28px;
+    text-align: start;
+
+    @media screen and (min-width: 768px) {
+      max-width: 526px;
+      font-size: 42px;
+      line-height: calc(49 / 42);
+    }
+  }
+  &__text {
+    color: $color-text;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+
+    margin-bottom: 28px;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 40px;
+      max-width: 500px;
+      font-size: 16px;
+      line-height: calc(19 / 16);
+    }
+  }
+
+  &__box--abbout {
+    @media screen and (min-width: 768px) {
+      display: flex;
+      justify-content: flex-start;
+      gap: 116px;
+    }
+    @media screen and (min-width: 1200px) {
+      gap: 67px;
+    }
+  }
+  &__icon {
+    padding: 8px;
+    margin-bottom: 8px;
+    fill: $color-accent-sec;
+    background-color: #fff;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+  }
+
+  &__subtitle {
+    color: $color-text;
+    text-align: start;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: calc(21 / 18);
+
+    margin-bottom: 16px;
+  }
+  &__subtext {
+    color: $color-text;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+
+    margin-bottom: 28px;
+
+    @media screen and (min-width: 768px) {
+      max-width: 252px;
+      margin-bottom: 40px;
+    }
+    @media screen and (min-width: 1200px) {
+      max-width: 253px;
+    }
+  }
+
+  &__list {
+    list-style: none;
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+      gap: 32px;
+    }
+    @media screen and (min-width: 1280px) {
+      display: flex;
+      gap: 139px;
+    }
+  }
+  &__item {
+    width: 100%;
+
+    @media screen and (min-width: 768px) {
+      max-width: 336px;
+    }
+    @media screen and (min-width: 1280px) {
+      max-width: 501px;
+    }
+  }
+
+  &__btn-order {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 1.5;
+    color: $color-text;
+    padding: 6px 18px;
+    background: $color-bcg;
+    border-radius: 30px;
+    border-color: $color-accent-sec;
+    margin-right: 24px;
+    cursor: pointer;
+    &:hover,
+    &:focus {
+      border-color: #597d00;
+    }
+  }
+  &__link {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 1.5;
+    color: $color-text;
+    &:hover,
+    &:focus {
+      color: #597d00;
+    }
+    @media screen and (min-width: 1200px) {
+      opacity: 0;
+    }
+  }
+}
+
+.offerings__container {
+  @extend .container;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+
+  @media screen and (max-width: 767px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-image: url(../images/bcg-mob-1.svg);
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-top: 60px;
+    background-image: url(../images/bcg-tab-1.svg);
+    padding-bottom: 120px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    display: flex;
+    align-items: center;
+    gap: 90px;
+
+    // padding-top: 100px;
+    padding-top: 255px;
+    background-image: url(../images/bcg-desk-1.svg);
+    padding-bottom: 43px;
+  }
+}
