@@ -100,14 +100,13 @@
 }
 
 .button-order-nav {
+  @extend %button;
   margin-left: 28px;
   width: 100px;
   height: 32px;
   background: $color-accent;
-  border-radius: 30px;
   font-size: 14px;
-  border: none;
-
+  
   @media screen and (max-width: 767px) {
     display: none;
   }
