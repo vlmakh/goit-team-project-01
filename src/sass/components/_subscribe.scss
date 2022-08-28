@@ -84,6 +84,7 @@
   height: 42px;
   outline: transparent;
   padding-left: 11px;
+  transition: border $duration $timing-function;
 
   @media screen and (max-width: 767px) {
     margin-bottom: 20px;
@@ -118,8 +119,12 @@ input::placeholder {
   @media screen and (max-width: 767px) {
     margin: 0 auto;
     margin-right: 0;
+    cursor: pointer;
+    transition: background-color $duration $timing-function;
   }
-  @media screen and (min-width: 768px) {
+  &:hover,
+  &:focus{
+    background-color: $color-btn-hover;
   }
 }
 
