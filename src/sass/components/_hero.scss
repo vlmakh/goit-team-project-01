@@ -1,11 +1,17 @@
 .hero {
+  @extend .section;
   padding-bottom: 50px;
+
+  @media screen and (min-width: 768px) and (max-width: 1280px) {
+    padding-top: 60px;
+  }
   @media screen and (min-width: 1280px) {
     padding: 0;
   }
 }
 
 .hero__container {
+  @extend .container;
   position: relative;
   @media screen and (min-width: 1280px) {
     position: relative;
@@ -57,15 +63,11 @@
 }
 
 .hero__btn-order {
+  @extend %button;
   font-weight: 500;
-  font-size: 13px;
   line-height: 1.5;
-  color: $color-text;
-
   padding: 6px 18px;
   background: $color-accent;
-  border-radius: 30px;
-  border: none;
   transition: $duration $timing-function;
 }
 
