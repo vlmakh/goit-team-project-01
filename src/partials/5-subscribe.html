@@ -11,9 +11,15 @@
           <input
             class="subscribe__input"
             type="email"
-            name="subscribe__email"
+            name="subscribe__email" required pattern="^([^ ]+@[^ ]+\.[a-z]{2,6}|)$"
             placeholder="Enter your email"
           />
+          <div class="subscribe__box__frame">
+          <svg class="subscribe__frame__icon" width="12" height="12">
+            <use href="./images/icons.svg#frame-icon"></use>
+          </svg>
+          <span class="subscribe__form__span">Not a valid email address (example@email.com)</span>
+          </div>
           <button class="subscribe__btn" type="submit">Subscribe</button>
         </form>
       </div>
