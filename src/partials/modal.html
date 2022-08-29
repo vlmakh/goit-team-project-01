@@ -13,99 +13,45 @@
     </button>
 
     <form class="form">
-      <h3 class="form__title">Leave your data, we will recall</h3>
+      <h3 class="form__title">Order form</h3>
 
       <div class="form__field form__field--first">
         <label class="form__label"
           >Name
-          <input type="text" name="name" class="form__input" />
-          <svg class="icon form__icon">
-            <use href="./images/icons.svg#icon-modal-person"></use>
-          </svg>
+          <input
+            type="text"
+            name="name"
+            class="form__input"
+            placeholder="Your name"
+          />
         </label>
       </div>
 
       <div class="form__field">
         <label class="form__label"
           >Phone
-          <input type="tel" name="phone" class="form__input" />
-          <svg class="icon form__icon">
-            <use href="./images/icons.svg#icon-modal-phone"></use>
-          </svg>
-        </label>
-      </div>
-
-      <!-- <div class="form__field">
-        <label class="form__label"
-          >Email
-          <input type="email" name="email" class="form__input" />
-          <svg class="icon form__icon">
-            <use href="./images/icons.svg#icon-modal-email"></use>
-          </svg>
-        </label>
-      </div> -->
-
-      <p class="form__label">Which dished are you interested in</p>
-      <div class="form__field--dishes">
-        <label class="policy-agree__label">
           <input
-            type="checkbox"
-            name="course1"
-            class="checkbox visually-hidden"
+            type="tel"
+            name="phone"
+            class="form__input"
+            placeholder="+38(0_ _) _ _ _  _ _  _ _"
           />
-          <span class="checkbox-my"></span>1 course
-        </label>
-        <label class="policy-agree__label">
-          <input
-            type="checkbox"
-            name="course2"
-            class="checkbox visually-hidden"
-          />
-          <span class="checkbox-my"></span>2 course
-        </label>
-        <label class="policy-agree__label">
-          <input
-            type="checkbox"
-            name="dessert"
-            class="checkbox visually-hidden"
-          />
-          <span class="checkbox-my"></span>dessert
-        </label>
-        <label class="policy-agree__label">
-          <input
-            type="checkbox"
-            name="beverages"
-            class="checkbox visually-hidden"
-          />
-          <span class="checkbox-my"></span>beverages
         </label>
       </div>
 
       <div class="form__field">
         <label class="form__label"
-          >Comments
-          <textarea
-            class="form__textarea"
-            name="comment"
-            rows="5"
-            placeholder="Type your comments"
-          ></textarea>
-        </label>
-      </div>
-
-      <div class="policy-agree">
-        <label class="policy-agree__label">
+          >Email
           <input
-            type="checkbox"
-            name="policy-agree"
-            class="checkbox visually-hidden"
+            type="email"
+            name="email"
+            class="form__input"
+            placeholder="example@gmail.com"
           />
-          <span class="checkbox-my"></span>Agree with&nbsp;
-          <a href="#" class="policy-agree__link">Agreement&nbsp;terms</a>
         </label>
       </div>
 
-      <button type="submit" class="button-order-modal">Order now</button>
+      <button type="submit" class="button-order-modal">Send</button>
     </form>
   </div>
 </div>
