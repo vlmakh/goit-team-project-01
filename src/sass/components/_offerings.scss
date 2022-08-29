@@ -14,13 +14,6 @@
     @media screen and (min-width: 1200px) {
       min-width: 550px;
     }
-
-    // background: radial-gradient(
-    //     50% 50% at 50% 50%,
-    //     #2f583f 0%,
-    //     rgba(105, 105, 105, 0) 100%
-    //   )
-    //   blur(13.2364px);
   }
 
   &__title {
@@ -134,10 +127,12 @@
     }
   }
   &__link {
+    display: inline-flex;
+    align-items: center;
+
     text-decoration: none;
     margin: 0;
     padding: 0;
-
     font-weight: 500;
     font-size: 13px;
     line-height: 1.5;
@@ -149,6 +144,19 @@
     @media screen and (min-width: 1200px) {
       opacity: 0;
     }
+    &::after {
+      content: '';
+      margin-left: 8px;
+      width: 10px;
+      height: 12px;
+
+      background: url(../images/offerings/vector.svg) no-repeat;
+      background-size: 10px 10px;
+      &:hover,
+      &:focus {
+        fill: #597d00;
+      }
+    }
   }
 }
 
@@ -159,13 +167,13 @@
   background-size: 100% 100%;
 
   @media screen and (max-width: 767px) {
-    padding-top: 60px;
+    padding-top: 40px;
     padding-bottom: 60px;
     background-image: url(../images/bcg-mob-1.svg);
   }
 
   @media screen and (min-width: 768px) {
-    padding-top: 60px;
+    padding-top: 150px;
     background-image: url(../images/bcg-tab-1.svg);
     padding-bottom: 100px;
   }
@@ -175,9 +183,8 @@
     align-items: center;
     gap: 90px;
 
-    // padding-top: 100px;
-    padding-top: 255px;
+    padding-top: 176px;
     background-image: url(../images/bcg-desk-1.svg);
-    padding-bottom: 43px;
+    padding-bottom: 42px;
   }
 }
