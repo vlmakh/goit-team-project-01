@@ -3,6 +3,22 @@
   padding-top: 0;
   padding-bottom: 0;
 
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+
+  @media screen and (max-width: 767px) {
+    background-image: url(../images/bcg-mob-1.svg);
+  }
+
+  @media screen and (min-width: 768px) {
+    background-image: url(../images/bcg-tab-1.svg);
+  }
+
+  @media screen and (min-width: 1280px) {
+    background-image: url(../images/bcg-desk-1.svg);
+  }
+
   &__picture--mobile {
     margin-bottom: 60px;
     margin-left: auto;
@@ -52,15 +68,15 @@
       gap: 67px;
     }
   }
-  &__icon {
-    padding: 8px;
-    margin-bottom: 8px;
-    fill: $color-accent-sec;
-    background-color: #fff;
-    border-radius: 50%;
-    width: 48px;
-    height: 48px;
-  }
+  // &__icon {
+  //   padding: 8px;
+  //   margin-bottom: 8px;
+  //   fill: $color-accent-sec;
+  //   background-color: #fff;
+  //   border-radius: 50%;
+  //   width: 48px;
+  //   height: 48px;
+  // }
 
   &__subtitle {
     color: $color-text;
@@ -68,7 +84,6 @@
     font-weight: 700;
     font-size: 18px;
     line-height: calc(21 / 18);
-
     margin-bottom: 16px;
   }
   &__subtext {
@@ -76,11 +91,8 @@
     font-size: 14px;
     line-height: calc(16 / 14);
 
-    margin-bottom: 28px;
-
     @media screen and (min-width: 768px) {
       max-width: 252px;
-      margin-bottom: 40px;
     }
     @media screen and (min-width: 1200px) {
       max-width: 253px;
@@ -92,18 +104,20 @@
 
     @media screen and (min-width: 768px) {
       display: flex;
-      gap: 32px;
+      gap: 116px;
     }
     @media screen and (min-width: 1280px) {
       display: flex;
-      gap: 139px;
+      gap: 67px;
     }
   }
   &__item {
     width: 100%;
+    margin-bottom: 28px;
 
     @media screen and (min-width: 768px) {
       max-width: 336px;
+      margin-bottom: 40px;
     }
     @media screen and (min-width: 1280px) {
       max-width: 501px;
@@ -121,6 +135,7 @@
     border-color: $color-accent-sec;
     margin-right: 24px;
     cursor: pointer;
+    transition: $duration $timing-function;
     &:hover,
     &:focus {
       border-color: #597d00;
@@ -137,44 +152,63 @@
     font-size: 13px;
     line-height: 1.5;
     color: $color-text;
+    transition: $duration $timing-function;
     &:hover,
     &:focus {
       color: #597d00;
+      fill: #597d00;
     }
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1280px) {
       opacity: 0;
     }
-    &::after {
-      content: '';
-      margin-left: 8px;
-      width: 10px;
-      height: 12px;
+  }
+  &__arrow {
+    margin-left: 8px;
 
-      background: url(../images/offerings/vector.svg) no-repeat;
-      background-size: 10px 10px;
-      &:hover,
-      &:focus {
-        fill: #597d00;
-      }
+    &:hover,
+    &:focus {
+      fill: currentColor;
     }
   }
+}
+.deliv::before {
+  content: '';
+  display: block;
+  margin-bottom: 8px;
+  width: 48px;
+  height: 48px;
+  padding: 0;
+
+  background: url(../images/offerings/deliv.svg) no-repeat;
+  background-size: 30px 30px;
+  background-position: center;
+  background-color: $color-bcg;
+  border-radius: 50%;
+}
+.order::before {
+  content: '';
+  display: block;
+  margin-bottom: 8px;
+  width: 48px;
+  height: 48px;
+  padding: 0;
+
+  background: url(../images/offerings/order.svg) no-repeat;
+  background-size: 30px 30px;
+  background-position: center;
+  background-color: $color-bcg;
+  border-radius: 50%;
 }
 
 .offerings__container {
   @extend .container;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100% 100%;
-
   @media screen and (max-width: 767px) {
     padding-top: 40px;
     padding-bottom: 60px;
-    background-image: url(../images/bcg-mob-1.svg);
   }
 
   @media screen and (min-width: 768px) {
     padding-top: 150px;
-    background-image: url(../images/bcg-tab-1.svg);
     padding-bottom: 100px;
   }
 
@@ -184,7 +218,6 @@
     gap: 90px;
 
     padding-top: 176px;
-    background-image: url(../images/bcg-desk-1.svg);
     padding-bottom: 42px;
   }
 }
