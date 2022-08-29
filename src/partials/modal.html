@@ -1,5 +1,5 @@
-<!-- Модальное окно - Заказать услугу -->
-<div class="backdrop is-hidden" data-modal>
+<!-- Модальное окно - Заказать срочно -->
+<div class="backdrop" data-modal>
   <div class="modal-form">
     <button
       type="button"
@@ -35,7 +35,7 @@
         </label>
       </div>
 
-      <div class="form__field">
+      <!-- <div class="form__field">
         <label class="form__label"
           >Email
           <input type="email" name="email" class="form__input" />
@@ -43,40 +43,41 @@
             <use href="./images/icons.svg#icon-modal-email"></use>
           </svg>
         </label>
-      </div>
+      </div> -->
 
-      <div class="form__field">
+      <p class="form__label">Which dished are you interested in</p>
+      <div class="form__field--dishes">
         <label class="policy-agree__label">
           <input
             type="checkbox"
             name="course1"
-            class="policy-checkbox visually-hidden"
+            class="checkbox visually-hidden"
           />
-          <span class="policy-checkbox-my"></span>1 course
+          <span class="checkbox-my"></span>1 course
         </label>
         <label class="policy-agree__label">
           <input
             type="checkbox"
             name="course2"
-            class="policy-checkbox visually-hidden"
+            class="checkbox visually-hidden"
           />
-          <span class="policy-checkbox-my"></span>2 course
+          <span class="checkbox-my"></span>2 course
         </label>
         <label class="policy-agree__label">
           <input
             type="checkbox"
             name="dessert"
-            class="policy-checkbox visually-hidden"
+            class="checkbox visually-hidden"
           />
-          <span class="policy-checkbox-my"></span>dessert
+          <span class="checkbox-my"></span>dessert
         </label>
         <label class="policy-agree__label">
           <input
             type="checkbox"
             name="beverages"
-            class="policy-checkbox visually-hidden"
+            class="checkbox visually-hidden"
           />
-          <span class="policy-checkbox-my"></span>beverages
+          <span class="checkbox-my"></span>beverages
         </label>
       </div>
 
@@ -97,9 +98,9 @@
           <input
             type="checkbox"
             name="policy-agree"
-            class="policy-checkbox visually-hidden"
+            class="checkbox visually-hidden"
           />
-          <span class="policy-checkbox-my"></span>Agree with&nbsp;
+          <span class="checkbox-my"></span>Agree with&nbsp;
           <a href="#" class="policy-agree__link">Agreement&nbsp;terms</a>
         </label>
       </div>
