@@ -1,21 +1,41 @@
-.footer__container {
-  @extend .section;
-  @extend .container;
+.footer{
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 
   @media screen and (max-width: 767px) {
-    background-image: url(.././images/footer/footer-bcg-320@2x.jpg);
+    background-image: url(.././images/footer/mob-bg/footer-mob-bcg-b.jpg), url(.././images/footer/mob-bg/footer-mob-bcg-l.jpg), url(.././images/footer/mob-bg/footer-mob-bcg-r.jpg);
+    background-position: bottom center, top 132px left, top right ;
+  }
+
+  @media screen and (max-width: 767px) and (min-resolution: 2dppx){
+    background-image: url(.././images/footer/mob-bg/footer-mob-bcg-b@2x.jpg), url(.././images/footer/mob-bg/footer-mob-bcg-l@2x.jpg), url(.././images/footer/mob-bg/footer-mob-bcg-r@2x.jpg);
+    background-size: 253px, 110px, 104px;
+    background-position: bottom center, top 132px left, top right ;
   }
 
   @media screen and (min-width: 768px) {
-    background-image: url(.././images/footer/footer-bcg-768@2x.jpg);
+    background-image: url(.././images/footer/tab-bg/footer-tab-bcg-b.jpg), url(.././images/footer/tab-bg/footer-tab-bcg-r.jpg);
+    background-position: bottom, right;
+  }
+
+  @media screen and (min-width: 768px) and (min-resolution: 2dppx){
+    background-image: url(.././images/footer/tab-bg/footer-tab-bcg-b@2x.jpg), url(.././images/footer/tab-bg/footer-tab-bcg-r@2x.jpg);
+    background-size: 785px, 203px;
+    background-position: bottom, right;
   }
 
   @media screen and (min-width: 1280px) {
-    background-image: url(.././images/footer/footer-bcg-1280@2x.jpg);
+    background-image: url(.././images/footer/desk-bg/footer-desk-bcg.jpg);
+    background-size: 1211px;
   }
+
+  @media screen and (min-width: 1280px) and (min-resolution: 2dppx){
+    background-image: url(.././images/footer/desk-bg/footer-desk-bcg@2x.jpg);
+    background-size: 1211px;
+  }
+}
+
+.footer__container {
+  @extend .container;
 }
 
 .link {
@@ -30,6 +50,8 @@
 }
 
 .footer__box--first {
+  @extend .section;
+  padding-bottom: 0;
   display: block;
 
   @media screen and (min-width: 1280px) {
@@ -81,18 +103,23 @@
   @media screen and (min-width: 1280px) {
     padding-top: 18px;
     margin-left: 145px;
+    justify-content: flex-start;
+    align-items: center;
   }
 }
 
 .footer-nav__link {
-  padding-top: 15px;
-  padding-bottom: 15px;
-  transition: $duration $timing-function;
+  transition: color $duration $timing-function, text-decoration $duration $timing-function;
 
   &:hover,
   &focus {
     color: $color-accent;
     text-decoration: underline;
+  }
+
+  @media screen and (min-width: 768px) {
+  padding-top: 15px;
+  padding-bottom: 15px;
   }
 }
 
@@ -121,7 +148,7 @@
   background: #ffffff;
   border: 0.85px solid $color-bcg-sec;
   border-radius: 30px;
-  transition: $duration $timing-function;
+  transition: border-color $duration $timing-function;
 
   &:hover,
   &focus {
@@ -162,7 +189,7 @@
   background-color: #ffffff;
   border: 0.85px solid $color-accent-sec;
   border-radius: 30px;
-  transition: $duration $timing-function;
+  transition: background-color $duration $timing-function, border-color $duration $timing-function;
 
   &:hover,
   &focus {
@@ -193,10 +220,6 @@
   line-height: 1.2;
   color: $color-text;
 
-  @media screen and (max-width: 767px) {
-    margin-bottom: 60px;
-  }
-
   @media screen and (min-width: 768px) {
     margin-top: 12px;
   }
@@ -208,6 +231,8 @@
 }
 
 .footer__box--second {
+    @extend .section;
+
   display: flex;
   @media screen and (max-width: 768px) {
     flex-direction: column;
@@ -215,7 +240,6 @@
 
   @media screen and (min-width: 768px) {
     flex-direction: row;
-    margin-top: 100px;
   }
 }
 
