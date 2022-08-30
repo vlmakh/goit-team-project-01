@@ -1,4 +1,5 @@
 .footer {
+  @extend .section;
   background-repeat: no-repeat;
 
   @media screen and (max-width: 767px) {
@@ -58,7 +59,7 @@
 }
 
 .footer__box--first {
-  @extend .section;
+  
   padding-bottom: 0;
   display: block;
 
