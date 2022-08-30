@@ -68,15 +68,6 @@
       gap: 67px;
     }
   }
-  // &__icon {
-  //   padding: 8px;
-  //   margin-bottom: 8px;
-  //   fill: $color-accent-sec;
-  //   background-color: #fff;
-  //   border-radius: 50%;
-  //   width: 48px;
-  //   height: 48px;
-  // }
 
   &__subtitle {
     color: $color-text;
@@ -159,7 +150,7 @@
       fill: #597d00;
     }
     @media screen and (min-width: 1280px) {
-      opacity: 0;
+      display: none;
     }
   }
   &__arrow {
@@ -180,7 +171,6 @@
   padding: 0;
 
   background: url(../images/offerings/deliv.svg) no-repeat;
-  background-size: 30px 30px;
   background-position: center;
   background-color: $color-bcg;
   border-radius: 50%;
@@ -194,7 +184,6 @@
   padding: 0;
 
   background: url(../images/offerings/order.svg) no-repeat;
-  background-size: 30px 30px;
   background-position: center;
   background-color: $color-bcg;
   border-radius: 50%;
