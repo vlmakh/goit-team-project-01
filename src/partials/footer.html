@@ -1,29 +1,33 @@
-
 <footer class="footer">
+  <div class="footer__container">
+    <div class="footer__box--first">
+      <!-- логотип футеру -->
+      <div class="footer__box-wrap">
+        <a href="">
+          <img src="./images/logo.svg" width="66" height="52" />
+        </a>
 
-    <div class="footer__container">
-        
-        <div class="footer__box--first"> 
-            <!-- логотип футеру -->
-            <div class="footer__box-wrap">
-                <a href="./" class="footer__logo--link link"> 
-                    <img class="logo" src="/src/images/logo.png" alt="logo" width="70">
-                </a>
-            
-
-                <!-- навігація футеру -->
-                <div class="footer__box-wrap">
-                    <ul class="footer-nav__list list">
-                        <li class="footer-nav__item"><a class="footer-nav__link link" href="./index.html">Home</a></li>
-                        <li class="footer-nav__item"><a class="footer-nav__link link" href="./">About</a></li>
-                        <li class="footer-nav__item"><a class="footer-nav__link link" href="./">Service</a></li>
-                        <li class="footer-nav__item"><a class="footer-nav__link link" href="./">Menu</a></li>
-                        <li class="footer-nav__item"><a class="footer-nav__link link" href="./">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-            
-
+        <!-- навігація футеру -->
+        <div class="footer__box-wrap">
+          <ul class="footer-nav__list list">
+            <li class="footer-nav__item">
+              <a class="footer-nav__link link" href="./index.html">Home</a>
+            </li>
+            <li class="footer-nav__item">
+              <a class="footer-nav__link link" href="./">About</a>
+            </li>
+            <li class="footer-nav__item">
+              <a class="footer-nav__link link" href="./">Service</a>
+            </li>
+            <li class="footer-nav__item">
+              <a class="footer-nav__link link" href="./">Menu</a>
+            </li>
+            <li class="footer-nav__item">
+              <a class="footer-nav__link link" href="./">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
 
       <!-- форма підписки у футері -->
       <div class="footer-sub">
@@ -35,31 +39,39 @@
             placeholder="Enter your email"
           />
 
+          <button class="footer-subscription-button" type="submit">
+            Subscribe
+          </button>
+        </form>
 
-                    <button class="footer-subscription-button" type="submit">
-                        Subscribe
-                    </button>
-                </form>
-
-                <p class="footer-sub__agreement">By subscribing you agree to with our <a class="footer-sub__agreement--link link"
-                    href="./"
-                    target="_blank"
-                    rel="noopener noreferrer">Privacy Policy</a>
-                </p>
-            </div>
-        </div>    
-
-            <!-- документація з додатковою інформацією -->
-        <div class="footer__box--second">
-            <ul class="footer-docs footer-docs__list list">
-                <li class="footer-docs__item"><a class="footer-docs__link link" href="./">Privacy Policy</a></li>
-                <li class="footer-docs__item"><a class="footer-docs__link link" href="">Terms of Service</a></li>
-                <li class="footer-docs__item"><a class="footer-docs__link link" href="">Cookies Settings</a></li>
-            </ul>
-
-            <p class="footer__copyright">2022 FoodSta. All right reserved.</p>
-        </div>
-
+        <p class="footer-sub__agreement">
+          By subscribing you agree to with our
+          <a
+            class="footer-sub__agreement--link link"
+            href="./"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Privacy Policy</a
+          >
+        </p>
+      </div>
     </div>
 
+    <!-- документація з додатковою інформацією -->
+    <div class="footer__box--second">
+      <ul class="footer-docs footer-docs__list list">
+        <li class="footer-docs__item">
+          <a class="footer-docs__link link" href="./">Privacy Policy</a>
+        </li>
+        <li class="footer-docs__item">
+          <a class="footer-docs__link link" href="">Terms of Service</a>
+        </li>
+        <li class="footer-docs__item">
+          <a class="footer-docs__link link" href="">Cookies Settings</a>
+        </li>
+      </ul>
+
+      <p class="footer__copyright">2022 FoodSta. All right reserved.</p>
+    </div>
+  </div>
 </footer>
