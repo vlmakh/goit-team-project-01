@@ -1,7 +1,12 @@
-<!-- Модальное окно - Заказать срочно -->
+<!-- Modal window - Order now -->
 <div class="backdrop is-hidden" data-modal>
   <div class="modal-form">
-    <button type="button" class="button-close" aria-label="Закрыть окно заказа" data-modal-close>
+    <button
+      type="button"
+      class="button-close"
+      aria-label="Закрыть окно заказа"
+      data-modal-close
+    >
       <svg class="icon icon-close">
         <use href="./images/icons.svg#icon-modal-close"></use>
       </svg>
@@ -12,29 +17,44 @@
 
       <div class="form-group form__field form__field--first">
         <label class="form__label" for="name">Name</label>
-        <input type="text" name="username" class="form__input" placeholder="Your name" />
+        <input
+          type="text"
+          name="username"
+          id="name"
+          class="form__input"
+          placeholder="Your name"
+        />
         <div class="messages"></div>
       </div>
 
       <div class="form-group form__field">
         <label class="form__label" for="phone">Phone</label>
-        <input type="tel" name="phone" class="form__input" placeholder="+38(0_ _) _ _ _  _ _  _ _" />
+        <input
+          type="tel"
+          name="phone"
+          id="phone"
+          class="form__input"
+          placeholder="+38(0_ _) _ _ _  _ _  _ _"
+        />
         <div class="messages"></div>
       </div>
 
       <div class="form-group form__field">
         <label class="form__label" for="email">Email </label>
-        <input type="email" name="email" class="form__input" placeholder="example@gmail.com" />
+        <input
+          type="email"
+          name="email"
+          id="email"
+          class="form__input"
+          placeholder="example@gmail.com"
+        />
         <div class="messages"></div>
       </div>
 
       <div class="form__submit">
         <button type="submit" class="button-order-modal">Send</button>
-        <div class="form__submit-required">
-          All fields are required
-        </div>
+        <div class="form__submit-required">All fields are required</div>
       </div>
-
     </form>
   </div>
 </div>
