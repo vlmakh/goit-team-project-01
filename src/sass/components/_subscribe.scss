@@ -1,6 +1,16 @@
 .subscribe {
   @extend .section;
-  padding-top: 0;
+
+  @media screen and (max-width: 767px) {
+    padding-top: 52px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    padding-top: 82px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-top: 0;
+  }
 }
 
 .subscribe__container {
@@ -9,8 +19,6 @@
   @media screen and (min-width: 1280px) {
     display: flex;
     flex-direction: column;
-
-    // height: 266px;
   }
 }
 
@@ -28,6 +36,7 @@
     max-width: 608px;
   }
 }
+
 .subscribe__box__photo {
   position: absolute;
 
@@ -106,7 +115,7 @@ input::placeholder {
 }
 
 .subscribe__btn {
-@extend %button;
+  @extend %button;
   background-color: $color-accent;
   display: block;
   font-weight: 500;
@@ -114,14 +123,14 @@ input::placeholder {
   border: 1px solid transparent;
   width: 103;
   height: 42;
-  
+
   @media screen and (max-width: 767px) {
     margin-left: auto;
     cursor: pointer;
     transition: background-color $duration $timing-function;
   }
   &:hover,
-  &:focus{
+  &:focus {
     background-color: $color-btn-hover;
   }
 }
@@ -132,24 +141,25 @@ input::placeholder {
   }
 }
 
-.subscribe__form__span{
+.subscribe__form__span {
   color: $color-text-invalid;
   font-weight: 400;
-    font-size: 10px;
-    line-height: calc(15 / 10);
+  font-size: 10px;
+  line-height: calc(15 / 10);
 }
 
-.subscribe__box__frame{
+.subscribe__box__frame {
   position: absolute;
   top: 46px;
   opacity: 0;
 }
-.subscribe__input:invalid:required:not(:placeholder-shown)~ .subscribe__box__frame {
+.subscribe__input:invalid:required:not(:placeholder-shown)
+  ~ .subscribe__box__frame {
   opacity: 1;
 }
- .subscribe__input:required:valid:not(:placeholder-shown) {
-   border-color: $color-btn-hover;
- }
- .subscribe__input:required:invalid:not(:placeholder-shown) {
-   border-color: $color-text-invalid;
-  }
+.subscribe__input:required:valid:not(:placeholder-shown) {
+  border-color: $color-btn-hover;
+}
+.subscribe__input:required:invalid:not(:placeholder-shown) {
+  border-color: $color-text-invalid;
+}
