@@ -1,28 +1,32 @@
-.footer{
+.footer {
   background-repeat: no-repeat;
 
   @media screen and (max-width: 767px) {
-    background-image: url(.././images/footer/mob-bg/footer-mob-bcg-b.jpg), url(.././images/footer/mob-bg/footer-mob-bcg-l.jpg), url(.././images/footer/mob-bg/footer-mob-bcg-r.jpg);
-    background-position: bottom center, top 132px left, top right ;
+    background-image: url(.././images/footer/mob-bg/footer-mob-bcg-b.jpg),
+      url(.././images/footer/mob-bg/footer-mob-bcg-l.jpg),
+      url(.././images/footer/mob-bg/footer-mob-bcg-r.jpg);
+    background-position: bottom center, top 132px left, top right;
 
-
-
-
-  }
-
-  @media screen and (max-width: 767px) and (min-resolution: 2dppx){
-    background-image: url(.././images/footer/mob-bg/footer-mob-bcg-b@2x.jpg), url(.././images/footer/mob-bg/footer-mob-bcg-l@2x.jpg), url(.././images/footer/mob-bg/footer-mob-bcg-r@2x.jpg);
-    background-size: 253px, 110px, 104px;
-    background-position: bottom center, top 132px left, top right ;
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(.././images/footer/mob-bg/footer-mob-bcg-b@2x.jpg),
+        url(.././images/footer/mob-bg/footer-mob-bcg-l@2x.jpg),
+        url(.././images/footer/mob-bg/footer-mob-bcg-r@2x.jpg);
+      background-size: 253px, 110px, 104px;
+      background-position: bottom center, top 132px left, top right;
+    }
   }
 
   @media screen and (min-width: 768px) {
-    background-image: url(.././images/footer/tab-bg/footer-tab-bcg-b.jpg), url(.././images/footer/tab-bg/footer-tab-bcg-r.jpg);
+    background-image: url(.././images/footer/tab-bg/footer-tab-bcg-b.jpg),
+      url(.././images/footer/tab-bg/footer-tab-bcg-r.jpg);
     background-position: bottom, right;
   }
 
-  @media screen and (min-width: 768px) and (min-resolution: 2dppx){
-    background-image: url(.././images/footer/tab-bg/footer-tab-bcg-b@2x.jpg), url(.././images/footer/tab-bg/footer-tab-bcg-r@2x.jpg);
+  @media screen and (min-width: 768px) and (min-resolution: 2dppx) {
+    background-image: url(.././images/footer/tab-bg/footer-tab-bcg-b@2x.jpg),
+      url(.././images/footer/tab-bg/footer-tab-bcg-r@2x.jpg);
     background-size: 785px, 203px;
     background-position: bottom, right;
   }
@@ -32,7 +36,7 @@
     background-size: 1211px;
   }
 
-  @media screen and (min-width: 1280px) and (min-resolution: 2dppx){
+  @media screen and (min-width: 1280px) and (min-resolution: 2dppx) {
     background-image: url(.././images/footer/desk-bg/footer-desk-bcg@2x.jpg);
     background-size: 1211px;
   }
@@ -113,7 +117,8 @@
 }
 
 .footer-nav__link {
-  transition: color $duration $timing-function, text-decoration $duration $timing-function;
+  transition: color $duration $timing-function,
+    text-decoration $duration $timing-function;
 
   &:hover,
   &focus {
@@ -122,8 +127,8 @@
   }
 
   @media screen and (min-width: 768px) {
-  padding-top: 15px;
-  padding-bottom: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
   }
 }
 
@@ -193,7 +198,8 @@
   background-color: #ffffff;
   border: 0.85px solid $color-accent-sec;
   border-radius: 30px;
-  transition: background-color $duration $timing-function, border-color $duration $timing-function;
+  transition: background-color $duration $timing-function,
+    border-color $duration $timing-function;
 
   &:hover,
   &focus {
@@ -235,7 +241,7 @@
 }
 
 .footer__box--second {
-    @extend .section;
+  @extend .section;
 
   display: flex;
   @media screen and (max-width: 768px) {
