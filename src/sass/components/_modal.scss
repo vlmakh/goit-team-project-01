@@ -138,3 +138,54 @@
     border-color: $color-accent-sec;
   }
 }
+
+.form__field.has-error .form__input {
+  border: 1px solid $color-text-invalid;
+}
+
+.messages {
+  position: absolute;
+  color: $color-text-invalid;
+  margin-left: 10px;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.icon-warning {
+  display: inline-block;
+  background-image: url(../images/warning.svg);
+  background-repeat: no-repeat;
+  width: 12px;
+  height: 12px;
+  margin-right: 5px;
+}
+
+.form__submit {
+  position: relative;
+}
+
+.form__submit-required {
+  position: absolute;
+  top: -30px;
+  right: 29%;
+  background-image: url(../images/bcg-req.png);
+  padding: 16px;
+  height: 54px;
+  opacity: 0.9;
+  border-radius: 30px;
+  color: #faedeb;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+  visibility: hidden;
+}
+
+.form.has-error .form__submit-required {
+  visibility: visible;
+}
+
+.button-order-modal.has-error {
+  border: 1px solid $color-text-invalid;
+}
