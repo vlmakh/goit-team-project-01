@@ -1,53 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FoodSta</title>
+    <link rel="stylesheet" href="./sass/index.scss" />
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>FoodSta</title>
-  <link rel="stylesheet" href="./sass/index.scss" />
-  <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+    <script type="module" src="./index.js"></script>
+  </head>
 
-  <script type="module" src="./index.js"></script>
-</head>
+  <body>
+    <!-- Header -Влад Махненко-->
+    <include src="./partials/_header.html"></include>
 
-<body>
-  <!-- Header -Влад Махненко-->
-  <include src="./partials/_header.html"></include>
+    <main>
+      <!-- Hero -Наталья Фалач -->
+      <include src="./partials/1-hero.html"></include>
 
-  <main>
-    <!-- Hero -Наталья Фалач -->
-    <include src="./partials/1-hero.html"></include>
+      <!-- Offerings -Роман Орлов -->
+      <include src="./partials/2-offerings.html"></include>
 
-    <!-- Offerings -Роман Орлов -->
-    <include src="./partials/2-offerings.html"></include>
+      <!-- Favorites -Денис Борисюк -->
+      <include src="./partials/3-favorites.html"></include>
 
-    <!-- Favorites -Денис Борисюк -->
-    <include src="./partials/3-favorites.html"></include>
+      <!-- Customers -Елена Каменева -->
+      <include src="./partials/4-customers.html"></include>
 
-    <!-- Customers -Елена Каменева -->
-    <include src="./partials/4-customers.html"></include>
+      <!-- Subscribe -Елена Каменева -->
+      <include src="./partials/5-subscribe.html"></include>
+    </main>
 
-    <!-- Subscribe -Елена Каменева -->
-    <include src="./partials/5-subscribe.html"></include>
-  </main>
+    <!-- Modal form -Наталья Фалач -->
+    <include src="./partials/modal.html"></include>
 
-  <!-- Modal form -->
-  <include src="./partials/modal.html"></include>
+    <!-- Footer -Анна Малацион -->
+    <include src="./partials/footer.html"></include>
 
-  <!-- Footer -Анна Малацион -->
-  <include src="./partials/footer.html"></include>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
-  <!-- Validate JS -->
-  <script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
-  <!-- Swiper JS -Наталья Фалач -->
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <!-- Initialize Swiper -->
-  <script src="./js/swiper.js"></script>
-  <script src="./js/modal.js" type="module"></script>
-  <script src="./js/form-validate.js" type="module"></script>
-  <script src="./js/mobile-menu.js" type="module"></script>
-</body>
-
+    <!-- Validate JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+    <!-- Swiper JS  -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  </body>
 </html>
