@@ -1,21 +1,9 @@
 .customers {
   @extend .section;
-  position: relative;
-
+  padding: 0;
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100% 100%;
-
-  @media screen and (min-width: 768px) and (max-width: 1279px) {
-    padding-top: 60px;
-    padding-bottom: 120px;
-  }
-
-  @media screen and (min-width: 1280px) {
-    padding-top: 100px;
-    padding-bottom: 200px;
-    // padding-right: 123px;
-  }
 
   @media screen and (max-width: 767px) {
     background-image: url(../images/bcg-mob-2.svg);
@@ -78,19 +66,21 @@
 
 .customers__container {
   @extend .container;
+  position: relative;
 
-  // @media screen and (max-width: 767px) {
-  //     padding-top: 60px;
-  //     padding-bottom: 0;
+  @media screen and (max-width: 767px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 
-  // }
-
-  // @media screen and (min-width: 768px) {
-  //     padding-top: 60px;
-  //     padding-bottom: 120px;
-  // }
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    padding-top: 60px;
+    padding-bottom: 120px;
+  }
 
   @media screen and (min-width: 1280px) {
+    padding-top: 100px;
+    padding-bottom: 200px;
     padding-right: 123px;
   }
 }
