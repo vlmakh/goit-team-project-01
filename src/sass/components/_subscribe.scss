@@ -94,6 +94,7 @@
   height: 42px;
   outline: transparent;
   padding-left: 11px;
+  font-size: 12px;
   transition: border $duration $timing-function;
 
   @media screen and (max-width: 767px) {

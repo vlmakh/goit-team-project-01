@@ -1,7 +1,7 @@
 .footer {
   @extend .section;
   background-repeat: no-repeat;
-  box-shadow: 0px -4px 24px 0px #6969691A;
+  box-shadow: 0px -4px 24px 0px #6969691a;
 
   @media screen and (max-width: 767px) {
     background-image: url(.././images/footer/mob-bg/footer-mob-bcg-b.jpg),
@@ -28,13 +28,12 @@
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-        background-image: url(.././images/footer/tab-bg/footer-tab-bcg-b@2x.jpg),
-      url(.././images/footer/tab-bg/footer-tab-bcg-r@2x.jpg);
+      background-image: url(.././images/footer/tab-bg/footer-tab-bcg-b@2x.jpg),
+        url(.././images/footer/tab-bg/footer-tab-bcg-r@2x.jpg);
       background-size: 785px, 203px;
       background-position: bottom, top right;
-      }
+    }
   }
-
 
   @media screen and (min-width: 1280px) {
     background-image: url(.././images/footer/desk-bg/footer-desk-bcg.jpg);
@@ -45,9 +44,8 @@
       (min-resolution: 2dppx) {
       background-image: url(.././images/footer/desk-bg/footer-desk-bcg@2x.jpg);
       background-size: 1211px;
-      }
+    }
   }
-
 }
 
 .footer__container {
@@ -66,7 +64,6 @@
 }
 
 .footer__box--first {
-  
   padding-bottom: 0;
   display: block;
 
@@ -82,7 +79,6 @@
     align-items: flex-start;
   }
 }
-
 
 .footer-nav__list {
   display: flex;
@@ -159,7 +155,7 @@
   }
 }
 
-.footer-sub__form{
+.footer-sub__form {
   position: relative;
 }
 
@@ -170,6 +166,7 @@
   background: #ffffff;
   border: 0.85px solid $color-bcg-sec;
   border-radius: 30px;
+  font-size: 12px;
   outline: transparent;
   transition: border-color $duration $timing-function;
 
@@ -199,7 +196,7 @@
   }
 }
 
-.footer-sub__validation{
+.footer-sub__validation {
   position: absolute;
   top: 46px;
   opacity: 0;
@@ -207,20 +204,18 @@
 
 .footer-sub__input:invalid:required:not(:placeholder-shown)
   ~ .footer-sub__validation {
-    opacity: 1;
-  }
+  opacity: 1;
+}
 
-.footer-sub__input:required:valid:not(:placeholder-shown){
+.footer-sub__input:required:valid:not(:placeholder-shown) {
   border-color: $color-btn-hover;
 }
 
-.footer-sub__input:required:invalid:not(:placeholder-shown){
+.footer-sub__input:required:invalid:not(:placeholder-shown) {
   border-color: $color-text-invalid;
 }
 
-
-
-.footer-sub__validation--text{
+.footer-sub__validation--text {
   font-weight: 400;
   font-size: 10px;
   line-height: 1.5;
