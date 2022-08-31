@@ -1,13 +1,22 @@
+// Main text
 $color-text: #2c2c2c;
 $color-text-sec: #696969;
+
+// Green colors
 $color-accent: #bbf330;
 $color-accent-sec: #7eb101;
+$color-btn-hover: #b5ff00;
+$color-btn-border-hover: #597D00;
+
+// Background
 $color-bcg: #fefefe;
 $color-bcg-sec: #ffe550;
+
+// Input forms
 $color-text-placeholder: #505050;
-$color-btn-hover: #b5ff00;
 $color-text-invalid: #FF705D;
 
+// Util variables
 $font-basic: 'Roboto', sans-serif;
 $shadow: radial-gradient(
   50% 50% at 50% 50%,

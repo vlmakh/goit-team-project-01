@@ -52,17 +52,6 @@
   @extend .container;
 }
 
-.link {
-  text-decoration: none;
-  color: currentColor;
-}
-
-.list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
 .footer__box--first {
   padding-bottom: 0;
   display: block;
@@ -81,6 +70,7 @@
 }
 
 .footer-nav__list {
+  @extend .list;
   display: flex;
 
   font-weight: 400;
@@ -113,6 +103,7 @@
 }
 
 .footer-nav__link {
+  @extend .link;
   transition: color $duration $timing-function,
     text-decoration $duration $timing-function;
 
@@ -223,37 +214,29 @@
 }
 
 .footer-subscription-button {
+  @extend %button;
+  width: 103px;
+  height: 42px;
   font-weight: 500;
-  font-size: 13px;
   line-height: 1.5;
-  cursor: pointer;
-  min-width: 103px;
-  min-height: 42px;
-  padding: 11px 22px;
-
-  color: $color-text;
   background-color: #ffffff;
   border: 0.85px solid $color-accent-sec;
-  border-radius: 30px;
-  transition: background-color $duration $timing-function,
-    border-color $duration $timing-function;
+
+  transition: background-color $duration $timing-function;
 
   &:hover,
-  &focus {
-    background-color: $color-accent;
-    border-color: $color-accent;
+  &:focus {
+    background-color: $color-bcg-sec;
   }
 
   &:active {
     background-color: $color-bcg-sec;
-    border-color: $color-accent-sec;
   }
 
   @media screen and (max-width: 767px) {
-    display: flex;
+    display: block;
     margin-bottom: 20px;
     margin-left: auto;
-    margin-right: 0;
   }
 
   @media screen and (min-width: 768px) {
@@ -291,7 +274,8 @@
   }
 }
 
-.footer-docs {
+.footer-docs__list {
+  @extend .list;
   font-weight: 400;
   font-size: 10px;
   line-height: 1.2;
@@ -324,4 +308,8 @@
   @media screen and (min-width: 768px) {
     margin-right: 0;
   }
+}
+
+.footer-docs__link {
+  @extend .link;
 }
