@@ -88,6 +88,7 @@
 .customers__icon {
   margin-bottom: 28px;
 }
+
 .customers__subtitle {
   margin-bottom: 40px;
   font-weight: 700;
@@ -99,10 +100,12 @@
     line-height: calc(21 / 18);
   }
 }
+
 .customers__box {
   display: flex;
   gap: 16px;
 }
+
 .customers__about {
   display: flex;
   flex-direction: column;
@@ -111,13 +114,35 @@
   padding-right: 16px;
   justify-content: center;
 }
+
 .customers__name {
   font-weight: 500;
   font-size: 14px;
   line-height: calc(21 / 14);
 }
+
 .customers__description {
   font-weight: 400;
   font-size: 14px;
   line-height: calc(21 / 14);
+}
+
+.customers__img-thumb {
+  position: absolute;
+
+  @media screen and (max-width: 767px) {
+    bottom: -35px;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+
+  @media screen and (min-width: 768px) {
+    bottom: -62px;
+    right: 32px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    bottom: -200px;
+    right: 32px;
+  }
 }

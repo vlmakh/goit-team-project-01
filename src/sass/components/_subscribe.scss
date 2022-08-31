@@ -37,23 +37,7 @@
   }
 }
 
-.subscribe__box__photo {
-  position: absolute;
 
-  @media screen and (max-width: 767px) {
-    bottom: -35px;
-    left: 50%;
-    transform: translate(-50%, 0);
-  }
-  @media screen and (min-width: 768px) {
-    bottom: -62px;
-    right: 32px;
-  }
-  @media screen and (min-width: 1280px) {
-    bottom: -200px;
-    right: 32px;
-  }
-}
 .subscribe__title {
   @extend .section__title;
   margin-bottom: 20px;
