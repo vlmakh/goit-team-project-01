@@ -76,7 +76,10 @@
 }
 
 .nav__item {
-  margin-left: 28px;
+  // z-index: 1000;
+  @media screen and (min-width: 768px) {
+    margin-left: 28px;
+  }
 }
 
 .nav__link {
@@ -100,14 +103,16 @@
 }
 
 .nav__link::after {
-  content: '';
-  position: absolute;
-  bottom: 28px;
-  left: 0;
-  width: 100%;
-  height: 1px;
-  background-color: $color-bcg;
-  transition: background-color $duration $timing-function;
+  @media screen and (min-width: 768px) {
+    content: '';
+    position: absolute;
+    bottom: 28px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: $color-bcg;
+    transition: background-color $duration $timing-function;
+  }
 }
 
 .nav__link:hover {
