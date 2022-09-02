@@ -31,7 +31,7 @@
     flex-wrap: wrap;
     gap: 20px;
 
-    @media screen and(max-width: 767px) {
+    @media screen and(max-width: 768px) {
       justify-content: center;
     }
 
@@ -65,7 +65,7 @@
   border: 11px solid $color-bcg-sec;
   transition: border-color $duration $timing-function;
 
-  @media screen and(max-width: 767px) {
+  @media screen and(max-width: 768px) {
     width: 280px;
     padding: 18px 17px;
     border-radius: 50%;
