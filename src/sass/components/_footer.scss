@@ -21,16 +21,17 @@
   }
 
   @media screen and (min-width: 768px) {
-    background-image: url(.././images/footer/tab-bg/footer-tab-bcg-r.jpg)
+    background-image: url(.././images/footer/tab-bg/footer-tab-bcg-r.jpg),
     url(.././images/footer/tab-bg/footer-tab-bcg-b.jpg);
     background-position: top right, bottom;
+    background-size: 203px, contain;
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
       background-image: url(.././images/footer/tab-bg/footer-tab-bcg-r@2x.jpg), 
       url(.././images/footer/tab-bg/footer-tab-bcg-b@2x.jpg);
-      background-size: 203px, contain;
+      
       background-position: top right, bottom;
     }
   }
