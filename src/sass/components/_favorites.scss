@@ -61,6 +61,10 @@
   }
 }
 
+.favorites__img {
+  transition: transform $duration $timing-function;
+}
+
 .favorites__thumb {
   border: 11px solid $color-bcg-sec;
   transition: border-color $duration $timing-function;
@@ -86,5 +90,9 @@
   &:hover,
   &:focus {
     border-color: $color-accent;
+  }
+
+  &:hover img {
+    transform: scale(1.1);
   }
 }
