@@ -41,15 +41,11 @@
   @extend .section__title;
   margin-bottom: 20px;
   // text-align: start;
-  @media screen and (min-width: 1200px) {
-    font-size: 42px;
-    line-height: calc(50 / 42);
-  }
+  
 }
+
 .subscribe__text {
-  line-height: calc(16 / 14);
-  // font-size: 14px;
-  // color: $color-text;
+  
   margin-bottom: 40px;
 
   @media screen and (min-width: 768px) {
@@ -105,14 +101,11 @@ input::placeholder {
   width: 103px;
   height: 42px;
   background-color: $color-accent;
-  display: block;
-  font-weight: 500;
-  line-height: calc(20 / 13);
-  
+  display: block;  
 
   @media screen and (max-width: 767px) {
     margin-left: auto;
-    cursor: pointer;
+    
     transition: background-color $duration $timing-function;
   }
   &:hover,

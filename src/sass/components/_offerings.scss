@@ -124,10 +124,8 @@
 
   &__btn-order {
     @extend %button;
-    width: 106px;
-    height: 40px;
-    padding: 6px 18px;
-    font-weight: 500;
+    width: 98px;
+    height: 32px;
     background: $color-bcg;
     border: 2px solid $color-accent-sec;
     margin-right: 24px;

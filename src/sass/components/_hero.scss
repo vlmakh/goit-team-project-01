@@ -14,15 +14,11 @@
 .hero__container {
   @extend .container;
   position: relative;
-  
 }
 
 .hero__title {
   @extend .section__title;
 
-  // @media screen and (min-width: 768px) and (max-width: 1280px) {
-  //   max-width: 537px;
-  // }
   @media screen and (min-width: 1280px) {
     margin-top: 160px;
     display: inline-block;
@@ -42,10 +38,7 @@
 .hero__text {
   margin-top: 28px;
   margin-bottom: 28px;
-  font-weight: 400;
-  font-size: 14px;
   line-height: 1.5;
-  color: $color-text;
 
   @media screen and (min-width: 768px) {
     font-size: 16px;
@@ -62,9 +55,8 @@
 
 .hero__btn-order {
   @extend %button;
-  font-weight: 500;
-  line-height: 1.5;
-  padding: 6px 18px;
+  width: 98px;
+  height: 32px;
   background: $color-accent;
   transition: $duration $timing-function;
 

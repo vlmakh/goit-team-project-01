@@ -144,11 +144,10 @@
 .button-order-nav {
   @extend %button;
   margin-left: 28px;
-  width: 100px;
+  width: 98px;
   height: 32px;
   background: $color-accent;
-  font-size: 14px;
-
+  
   transition: background-color $duration $timing-function;
 
   @media screen and (max-width: 767px) {
