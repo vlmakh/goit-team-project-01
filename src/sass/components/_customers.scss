@@ -5,7 +5,7 @@
   background-position: center;
   background-size: 100% 100%;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 768px) {
     background-image: url(../images/bcg-mob-2.svg);
   }
   @media screen and (min-width: 768px) {
@@ -68,12 +68,12 @@
   @extend .container;
   position: relative;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 768px) {
     padding-top: 60px;
     padding-bottom: 60px;
   }
 
-  @media screen and (min-width: 768px) and (max-width: 1279px) {
+  @media screen and (min-width: 768px) and (max-width: 1280px) {
     padding-top: 60px;
     padding-bottom: 120px;
   }
@@ -130,7 +130,7 @@
 .customers__img-thumb {
   position: absolute;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 768px) {
     bottom: -35px;
     left: 50%;
     transform: translate(-50%, 0);

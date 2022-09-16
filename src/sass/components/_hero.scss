@@ -14,18 +14,11 @@
 .hero__container {
   @extend .container;
   position: relative;
-  @media screen and (min-width: 1280px) {
-    position: relative;
-    display: block;
-  }
 }
 
 .hero__title {
   @extend .section__title;
 
-  @media screen and (min-width: 768px) and (max-width: 1280px) {
-    max-width: 537px;
-  }
   @media screen and (min-width: 1280px) {
     margin-top: 160px;
     display: inline-block;
@@ -45,10 +38,7 @@
 .hero__text {
   margin-top: 28px;
   margin-bottom: 28px;
-  font-weight: 400;
-  font-size: 14px;
   line-height: 1.5;
-  color: $color-text;
 
   @media screen and (min-width: 768px) {
     font-size: 16px;
@@ -65,22 +55,37 @@
 
 .hero__btn-order {
   @extend %button;
-  font-weight: 500;
-  line-height: 1.5;
-  padding: 6px 18px;
+  width: 98px;
+  height: 32px;
   background: $color-accent;
-  transition: $duration $timing-function;
+  transition: background-color $duration $timing-function;
 
   @media screen and (min-width: 768px) and (max-width: 1279px) {
     position: absolute;
     bottom: -75px;
     left: 32px;
   }
+
+  animation: changeSize 2000ms linear infinite;
+}
+
+@keyframes changeSize {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
 }
 
 .hero__btn-order:hover,
 .hero__btn-order:focus {
-  background: $color-btn-hover;
+  background-color: $color-btn-hover;
 }
 
 .slider {

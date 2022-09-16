@@ -3,7 +3,7 @@
   background-repeat: no-repeat;
   box-shadow: 0px -4px 24px 0px #6969691a;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 768px) {
     background-image: url(.././images/footer/mob-bg/footer-mob-bcg-b.jpg),
       url(.././images/footer/mob-bg/footer-mob-bcg-l.jpg),
       url(.././images/footer/mob-bg/footer-mob-bcg-r.jpg);
@@ -21,29 +21,33 @@
   }
 
   @media screen and (min-width: 768px) {
-    background-image: url(.././images/footer/tab-bg/footer-tab-bcg-b.jpg),
-      url(.././images/footer/tab-bg/footer-tab-bcg-r.jpg);
-    background-position: bottom, top right;
+    background-image: url(.././images/footer/tab-bg/footer-tab-bcg-r.jpg),
+    url(.././images/footer/tab-bg/footer-tab-bcg-b.jpg);
+    background-position: top right, bottom;
+    background-size: 203px, contain;
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(.././images/footer/tab-bg/footer-tab-bcg-b@2x.jpg),
-        url(.././images/footer/tab-bg/footer-tab-bcg-r@2x.jpg);
-      background-size: 785px, 203px;
-      background-position: bottom, top right;
+      background-image: url(.././images/footer/tab-bg/footer-tab-bcg-r@2x.jpg), 
+      url(.././images/footer/tab-bg/footer-tab-bcg-b@2x.jpg);
+      
+      background-position: top right, bottom;
     }
   }
 
   @media screen and (min-width: 1280px) {
     background-image: url(.././images/footer/desk-bg/footer-desk-bcg.jpg);
-    background-size: 1211px;
+    background-size: contain;
+    background-position: bottom;
+    
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
       background-image: url(.././images/footer/desk-bg/footer-desk-bcg@2x.jpg);
-      background-size: 1211px;
+      background-size: contain;
+      background-position: bottom;
     }
   }
 }
@@ -217,8 +221,7 @@
   @extend %button;
   width: 103px;
   height: 42px;
-  font-weight: 500;
-  line-height: 1.5;
+  
   background-color: #ffffff;
   border: 0.85px solid $color-accent-sec;
 

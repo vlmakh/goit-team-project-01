@@ -5,7 +5,7 @@
   background-position: center;
   background-size: 100% 100%;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 768px) {
     padding-top: 41px;
 
     background-image: url(../images/bcg-mob-1.svg);
@@ -23,7 +23,7 @@
     background-image: url(../images/bcg-desk-1.svg);
   }
 
-  &__picture--mobile {
+  &__img--mobile {
     // margin-bottom: 60px;
     margin-left: auto;
     margin-right: auto;
@@ -124,10 +124,8 @@
 
   &__btn-order {
     @extend %button;
-    width: 106px;
-    height: 40px;
-    padding: 6px 18px;
-    font-weight: 500;
+    width: 98px;
+    height: 32px;
     background: $color-bcg;
     border: 2px solid $color-accent-sec;
     margin-right: 24px;
